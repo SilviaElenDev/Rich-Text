@@ -3,14 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rich Text</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[url(./src/bg.png)] bg-no-repeat overflow-hidden w-auto h-screen bg-cover bg-fixed">
-    <div class="w-3xl h-screen m-auto mt-10">
-        <div class="bg-white w-auto h-screen shadow-10"></div>
-        <div></div>
-    </div>   
+<body class="overflow-hidden bg-[url(./src/bg.png)] bg-no-repeat bg-cover bg-fixed">
+    
+    <div class="w-3xl h-screen m-auto mt-10 relative">
+        <div class="h-full bg-white shadow-xl shadow-[#2b4238] rounded-sm p-10 pt-20 pb-55">
+            <textarea placeholder="Crie..." onfocus="" id="textArea" class=" w-full resize-none focus:ring-none focus:outline-none max-h-9/10 h-auto"></textarea>
+        </div>
+        <div class="w-3xl h-20 p-5 shadow-2xl shadow-[#2b4238] bg-[#678b7c] absolute bottom-10 left-0 rigth-0">
+            <div class="w-auto h-autosi flex justify-around items-center overflow-hidden ">
+                <div class="border border-white rounded-lg ml-4 mr-4 w-min flex">
+                    <button class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white border-white cursor-pointer "><i class="bi bi-type-italic"></i></button>
+                    <button class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white border-white cursor-pointer "><i class="bi bi-type-bold"></i></button>
+                    <button class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white border-white cursor-pointer ">A</button>
+                    <button class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white border-white cursor-pointer "><i class="bi bi-paint-bucket"></i></button>
+                    <button class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white border-white cursor-pointer "><i class="bi bi-type-underline"></i></button>
+                </div>
+                <div class="border border-white rounded-lg ml-4 mr-4 w-min flex">
+                    <input placeholder="Font-family" class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white cursor-pointer outline-none w-40" type="text">
+                    <input placeholder="16" class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white cursor-pointer outline-none w-12" type="number"/>
+                </div>
+                <div class="border border-white rounded-lg ml-4 mr-4 w-min flex">
+                    <button class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white border-white cursor-pointer "><i class="bi bi-text-left"></i></button>
+                    <button class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white border-white cursor-pointer "><i class="bi bi-text-center"></i></button>
+                    <button class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white border-white cursor-pointer "><i class="bi bi-text-right"></i></button>
+                    <button class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white border-white cursor-pointer "><i class="bi bi-list-ol"></i></button>
+                    <button class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white border-white cursor-pointer "><i class="bi bi-list-ul"></i></button>
+                    <button class="hover:bg-[#81ad9b] rounded-lg p-1 m-1 text-white border-white cursor-pointer "><i class="bi bi-list-check"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./src/script.js"></script>
 </html>
+
+
+
+
+<!-- pastelPink: "[#F8C8DC]",
+    pastelGreen: "[#B8E0D2]",
+    pastelBlue: "[#A7C7E7]",
+    pastelYellow: "[#FDFD96]",
+    pastelPeach: "[#FFD1BA]",
+    pastelLavender: "[#DCC6E0]" -->
